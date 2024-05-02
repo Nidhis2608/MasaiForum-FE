@@ -9,7 +9,7 @@ function Feeds() {
     useEffect(() => {
         async function fetchPosts() {
             try {
-                const response = await axios.get('http://localhost:3000/api/posts');
+                const response = await axios.get('https://masaiforum-be.onrender.com/api/posts');
                 setPosts(response.data);
             } catch (error) {
                 console.error('Error fetching posts:', error);
