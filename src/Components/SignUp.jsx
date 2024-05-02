@@ -25,7 +25,7 @@ function SignUp() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post('http://localhost:3000/api/register', { username, email, password });
+      const { data } = await axios.post('https://masaiforum-be.onrender.com/api/register', { username, email, password });
       dispatch(setUser(data));
       toast({
         title: "Registration Successful",
