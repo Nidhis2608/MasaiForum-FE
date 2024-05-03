@@ -48,8 +48,10 @@ function SignUp() {
   };
 
   return (
-    <Flex height="100vh" alignItems="center" justifyContent="center">
-      <Box p={8} maxWidth="600px" borderWidth={1} borderRadius={8} boxShadow="lg">
+    <Flex height="80vh" alignItems="center" justifyContent="center">
+      <Flex width="80%" align="center" justify="center" gap="20px">
+      <img style={{height:"auto", width:"80%"}} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRaqInFMp8et_W4Xtf5ccbWxL1eQo6Zkx3NA&s' alt="Scenic background" />
+      <Box p={8} width="50%" borderWidth={1} borderRadius={8} boxShadow="lg">
         <VStack spacing={4} as="form" onSubmit={handleSubmit}>
           <FormControl isRequired>
           <h1 style={{textAlign:"center", fontFamily:"larger", fontSize:"60px"}}>MASAI FORUM</h1>
@@ -69,6 +71,7 @@ function SignUp() {
         </VStack>
       </Box>
     </Flex>
+      </Flex>
   );
 }
 

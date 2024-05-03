@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from 'react';
+
 import axios from 'axios';
-import { Box, Container, SimpleGrid } from '@chakra-ui/react';
+import { Box, Button, Container, SimpleGrid } from '@chakra-ui/react';
 import PostCard from './PostCard';
+
 
 function Feeds() {
     const [posts, setPosts] = useState([]);
+    
+
 
     useEffect(() => {
         async function fetchPosts() {
@@ -27,6 +31,7 @@ function Feeds() {
                     ))}
                 </SimpleGrid>
             </Box>
+            
         </Container>
     );
 }

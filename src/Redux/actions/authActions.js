@@ -15,3 +15,9 @@ export function logoutUser() {
     type: LOGOUT_USER
   };
 }
+
+export const clearUser = () => {
+  return {
+      type: 'CLEAR_USER'
+  };
+};

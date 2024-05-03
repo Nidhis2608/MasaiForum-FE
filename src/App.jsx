@@ -4,6 +4,7 @@ import SignIn from './Components/SignIn';
 import SignUp from './Components/SignUp';
 import Feeds from './Components/Feeds';
 import PostCard from './Components/PostCard';
+import NavBar from './Components/Navbar';
 
 
 
@@ -12,6 +13,7 @@ import PostCard from './Components/PostCard';
 function App() {
   return (
     <Router>
+      <NavBar />
       <Routes>
         <Route path="/" element={<SignUp />} />
         <Route path="/signin" element={<SignIn />} />
