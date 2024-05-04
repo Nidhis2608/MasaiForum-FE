@@ -10,6 +10,7 @@ const NavBar = () => {
 
   const handleLogout = () => {
     dispatch(clearUser());
+    localStorage.removeItem('token'); 
     navigate('/signin'); 
   };
 
