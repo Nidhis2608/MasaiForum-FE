@@ -19,7 +19,7 @@ const NavBar = () => {
     alignItems: 'center',
     backgroundColor: '#0C359E',
     color: '#fff',
-    padding: '1rem',
+    padding: '0rem',
   };
 
   const linkStyle = {
@@ -30,7 +30,7 @@ const NavBar = () => {
 
   return (
     <nav style={navStyle}>
-      <h1 style={{ fontSize: "60px" }}>Masai Forum</h1>
+      <h1 style={{ fontSize: "50px" }}>Masai Forum</h1>
       {['/', '/signin'].includes(location.pathname) && (
         <>
           <NavLink to="/" style={linkStyle}>Signup</NavLink>
